@@ -1,57 +1,67 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Outfit';
     background: linear-gradient(#ffdad5, #fff7f9);
-    padding-top: 15vh;
+    padding-top: 15px;
 }
 
 footer {
     background-color: #0080ff;
     color: white;
     text-align: center;
-    padding: 6px;  /* Réduire la taille du padding pour diminuer la taille du footer */
-    font-size: 0.8em;  /* Ajuster la taille de la police si nécessaire */
-    position: fixed;  /* Fixer le footer en bas de la page */
+    font-size: 0.8em;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
 
+.space-before {
+    margin: 1vh;
+    padding: 1vh;
+}
+
 .contact-container {
-    height: 100vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
-    
+
+form {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+} 
+
 .contact-left {
     display : flex;
     flex-direction: column;
-    align-items: start;
     gap: 20px;
 }
 
-.contact-left-title h2 {
+#contact-left-title h2{
     position: absolute;
     display: flex;
     font-weight: 600;
     color: #a363aa;
     align-items: right;
     margin-left: 600px;
-    margin-bottom: 5px;
-    font-size: 40px;
+    margin-top: 20px;
+    font-size: 50px;
 }
-.contact-left-image {
+#contact-left-image {
     position: absolute;
     display: flex;
     align-items: right;
     margin-left: 700px;
-    padding-top: 85px;
+    margin-top: 185px;
+    border-radius: 15px;
+}
+
+.contact-right img {
+    margin-top: 0;
 }
 
 .contact-left textarea {
@@ -69,7 +79,6 @@ footer {
 .contact-left-input {
     width: 400px;
     height: 50px;
-    margin-left: 2%;
     border-radius: 20px;
     padding-left: 15px;
 }
@@ -77,6 +86,7 @@ footer {
 .contact-left button {
     display: flex;
     align-items: center;
+    text-align: center;
     padding: 15px 30px;
     font-size: 16px;
     color: #fff;
@@ -121,28 +131,26 @@ footer {
     background-color: #20c056;
 }
 
-/* Bande défilante d'images */
-.image-slider {
-    width: 100%;
-    overflow: hidden;
-    background-color: #000;
-    margin-top: 180px;
-}
-
 .slider-wrapper {
-    display: flex;
-    width: calc(265px * 8); /* Adjust based on the number of images */
-    animation: slide 10s linear infinite;
+    position: absolute;
+    top: 130vh;
+    right : 25vh;
+    bottom: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    z-index: 1000;
 }
 
 .slider-wrapper img {
     width: 265px;
     height: 265px;
-    object-fit: cover; /* Assure que l'image couvre toute la surface sans distorsion */
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Animation pour le défilement */
-@keyframes slide {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } /* Moves only halfway since images are duplicated */
+.space-after {
+    margin: 1vh;
+    padding: 1vh;
 }
