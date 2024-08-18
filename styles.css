@@ -1,58 +1,90 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
+* {
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+body {
+    font-family: 'Outfit';
+    background: linear-gradient(#ffdad5, #fff7f9);
+    padding-top: 15vh;
 }
 
-h1 {
-    text-align: center;
-    color: #333;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input, select, textarea {
-    margin-top: 5px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-textarea {
-    resize: vertical;
-}
-
-button {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #28a745;
+footer {
+    background-color: #0080ff;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+    text-align: center;
+    padding: 6px;  /* Réduire la taille du padding pour diminuer la taille du footer */
+    font-size: 0.8em;  /* Ajuster la taille de la police si nécessaire */
+    position: fixed;  /* Fixer le footer en bas de la page */
+    bottom: 0;
+    width: 100%;
 }
 
-button:hover {
-    background-color: #218838;
+.contact-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+    
+.contact-left {
+    display : flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-left-title h2 {
+    position: absolute;
+    display: flex;
+    font-weight: 600;
+    color: #a363aa;
+    align-items: right;
+    margin-left: 600px;
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+.contact-left-image {
+    position: absolute;
+    display: flex;
+    align-items: right;
+    margin-left: 700px;
+    padding-top: 85px;
+}
+
+.contact-left textarea {
+    width: 400px;
+    height: 140px;
+    padding-top: 15px;
+    padding-left: 15px;
+    border-radius: 20px;
+}
+    
+.contact-inputs:focus {
+    border: 2px solid #ff994f
+}
+
+.contact-left-input {
+    width: 400px;
+    height: 50px;
+    margin-left: 2%;
+    border-radius: 20px;
+    padding-left: 15px;
+}
+    
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    cursor: pointer;
 }
 
 .availability label {
@@ -63,4 +95,54 @@ button:hover {
 
 .availability input {
     margin-right: 10px;
+}
+
+/* Styles pour le bouton WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #20c056;
+}
+
+/* Bande défilante d'images */
+.image-slider {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    margin-top: 180px;
+}
+
+.slider-wrapper {
+    display: flex;
+    width: calc(265px * 8); /* Adjust based on the number of images */
+    animation: slide 10s linear infinite;
+}
+
+.slider-wrapper img {
+    width: 265px;
+    height: 265px;
+    object-fit: cover; /* Assure que l'image couvre toute la surface sans distorsion */
+}
+
+/* Animation pour le défilement */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Moves only halfway since images are duplicated */
 }
