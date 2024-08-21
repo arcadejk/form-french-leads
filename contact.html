@@ -4,30 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Apprendre le Français avec Arcade</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 <body>
-    <header style="background: linear-gradient(135deg, #ffdad5, #fff7f9); padding: 20px 0; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-            <div>
-                <h1 style="font-family: 'Outfit', sans-serif; font-size: 36px; color: #0080ff; margin: 0;">Apprendre le Français avec Arcade</h1>
-                <p style="font-family: 'Outfit', sans-serif; color: #a363aa; font-size: 18px; margin: 5px 0 0;">Explorez le blog, les cours et bien plus encore!</p>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Apprendre le Français avec Arcade</h1>
+                <p>Explorez le blog, les cours et bien plus encore!</p>
             </div>
-            <nav style="font-family: 'Outfit', sans-serif; font-size: 18px;">
-                <a href="index.html" style="color: #0080ff; margin-right: 20px; text-decoration: none;">Accueil</a>
-                <a href="blog.html" style="color: #0080ff; margin-right: 20px; text-decoration: none;">Blog</a>
-                <a href="cours.html" style="color: #0080ff; margin-right: 20px; text-decoration: none;">Cours</a>
-                <a href="contact.html" style="color: #0080ff; text-decoration: none;">Contact</a>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="blog.html">Blog</a>
+                <a href="cours.html">Cours</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section style="padding: 20px;">
-            <h2>Contactez-nous</h2>
-            <p>Vous avez des questions ou souhaitez en savoir plus sur nos cours? Contactez-nous!</p>
-            <!-- Contact form or details will go here -->
-        </section>
+        <h2>Contactez-nous</h2>
+        <p>Nous sommes ravis de recevoir vos questions, commentaires ou suggestions. Veuillez remplir le formulaire ci-dessous et nous vous répondrons dès que possible.</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Sujet :</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
     </main>
 
     <footer>
