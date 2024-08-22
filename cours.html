@@ -19,6 +19,9 @@
                 <a href="cours.html" style="color: #0080ff; margin-right: 20px; text-decoration: none;">Cours</a>
                 <a href="contact.html" style="color: #0080ff; text-decoration: none;">Contact</a>
             </nav>
+            <button class="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -28,10 +31,19 @@
             <p>Explorez nos cours de français adaptés à tous les niveaux, de débutant à avancé.</p>
             <!-- Course details will go here -->
         </section>
+        <div class="space-after"></div>
     </main>
 
     <footer>
         <p>&copy; 2024 Apprendre le français avec Arcade</p>
     </footer>
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/be58f692ee.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('show-nav');
+        });
+    </script>
 </body>
 </html>

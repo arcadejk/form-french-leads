@@ -20,6 +20,9 @@
                 <a href="cours.html">Cours</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <button class="menu-icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
     </header>
 
@@ -41,10 +44,20 @@
 
             <button type="submit">Envoyer</button>
         </form>
+        <div class="space-after"></div>
     </main>
 
     <footer>
         <p>&copy; 2024 Apprendre le français avec Arcade</p>
     </footer>
+
+    <script src="assets/js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/be58f692ee.js" crossorigin="anonymous"></script>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+            document.querySelector('header').classList.toggle('show-nav');
+        });
+    </script>
 </body>
 </html>
