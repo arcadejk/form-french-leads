@@ -11,7 +11,7 @@
     text-decoration: none;
 }
 
-    .blog-container {
+.blog-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -66,4 +66,15 @@
 
 .blog-actions button:hover {
     color: #ff994f;
+}
+
+@media (max-width: 344px) {
+    .container {
+        width: 100%;
+    }
+
+    .blog-container {
+        position: inline-block;
+    }
+
 }

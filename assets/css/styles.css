@@ -175,19 +175,13 @@ form {
 
 /* Styles spécifiques au Galaxy Z Fold 5 */
 @media (max-width: 344px) {
-    .contact-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 15px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    header h1, header p {
+        padding-left: 15px;
+        padding-right: 8px;
+        text-align: left;
     }
-    
     form {
-        padding-right: 20px;
-        padding-left: 20px;
-        margin-bottom: 5vh;
+        padding: 15px;
     }
 
     .contact-left, .contact-right {
@@ -213,9 +207,11 @@ form {
     }
 
     .contact-left-input, .contact-left textarea, .contact-left select {
-        width: 280px;
+        width: 240px;
         font-size: 14px;
         padding: 8px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
 
     .availability label {
