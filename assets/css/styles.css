@@ -21,7 +21,7 @@ footer {
 }
 
 .contact-container {
-    min-height: 85vh;
+    min-height: 85%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -162,63 +162,113 @@ form {
     padding: 3vh;
 }
 
+@media (max-width: 768px) {
+    .contact-left, .contact-right {
+        width: 100%;
+        padding: 0;
+    }
+    .contact-left-title {
+        text-align: center;
+    }
+    .contact-left button[type="submit"] {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contact-right img {
+        margin-top: 20px;
+    }
+    /* Mostrar ícone do menu no mobile */
+    .menu-icon {
+        display: block;
+    }
+    /* Esconder navegação no mobile */
+    nav {
+        display: none;
+    }
+    /* Reordenar o layout para mobile */
+    .contact-right {
+        order: 1;
+    }
+    .contact-left {
+        order: 2;
+    }
+    .image-slider {
+        order: 3;
+    }
+}
 
-@media only screen and (max-width: 768px) {
-    body {
-        padding-top: 10px;
+/* Styles spécifiques au Galaxy Z Fold 5 */
+@media (max-width: 344px) {
+    .contact-left, .contact-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-left-title {
+        font-size: 20px;
+        text-align: center;
+    }
+    #contact-left-title h2 {
+        font-weight: 600;
+        color: #a363aa;
+        align-items: center;
+        text-align: center;
+        font-size: 50px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        width: 400px;
+    }
+    .contact-left button[type="submit"] {
+        width: 100%;
+        margin-top: 20px;
         font-size: 14px;
+    }
+    #contact-left-image {
+        position: relative;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .contact-right img {
+        display: none;
+    }
+
+    .contact-left-input, .contact-left textarea, .contact-left select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .availability label {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        font-size: 20px;
+    }
+
+    /* Ajustando imagens do slider */
+    .image-slider {
+        margin-top: 15px;
+    }
+
+    .space-before, .space-after {
+        margin: 0.5vh;
+        padding: 0.5vh;
     }
 
     footer {
-        font-size: 0.7em;
-    }
-
-    .contact-container {
-        flex-direction: column;
-        padding: 10px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    #contact-left-title h2 {
-        font-size: 30px;
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100%;
-        padding: 10px;
-    }
-
-    #contact-left-image {
-        margin-left: 0;
-        margin-top: 20px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .contact-left textarea, 
-    .contact-left-input {
-        width: 100%;
-        height: auto;
-    }
-
-    .slider-wrapper {
-        position: static;
-        display: grid;
-        grid-template-columns: 1fr;
-        right: 0;
-        top: auto;
-        bottom: 0;
-        grid-gap: 10px;
-    }
-
-    .slider-wrapper img {
-        width: 100%;
-        height: auto;
-    }
-
-    .whatsapp-button {
-        font-size: 40px;
-        padding: 10px;
+        font-size: 14px;
     }
 }
+  
+    
