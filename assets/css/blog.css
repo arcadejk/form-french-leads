@@ -68,6 +68,17 @@
     color: #ff994f;
 }
 
+@media (max-width: 421px) {
+    .container {
+        width: 100%;
+    }
+
+    .blog-container {
+        position: inline-block;
+    }
+
+}
+
 @media (max-width: 344px) {
     .container {
         width: 100%;
