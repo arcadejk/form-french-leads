@@ -172,6 +172,121 @@ form {
     padding: 3vh;
 }
 
+/* Styles spécifiques au Galaxy S20 Ultra */
+@media (max-width: 421px) {
+    header h1, header p {
+        padding-left: 15px;
+        padding-right: 8px;
+        text-align: left;
+    }
+    form {
+        padding: 15px;
+    }
+
+    .contact-left, .contact-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contact-left-title {
+        font-size: 20px;
+        text-align: right;
+    }
+    #contact-left-title h2 {
+        display: none;
+    }
+    .contact-left button[type="submit"] {
+        width: 100%;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    #contact-left-image, .contact-right img {
+        display: none;
+    }
+
+    .contact-left-input, .contact-left textarea, .contact-left select {
+        width: 330px;
+        font-size: 14px;
+        padding: 8px;
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+    .availability label {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .menu-icon {
+        display: block; /* Exibe o ícone do menu */
+        font-size: 30px; /* Tamanho do ícone */
+        color: #0080ff; /* Cor do ícone */
+        cursor: pointer; /* Cursor indicando que o ícone é clicável */
+        position: absolute; /* Posiciona o ícone no topo */
+        top: 50px; /* Alinhamento ao topo */
+        right: 20px; /* Alinhamento à direita */
+        z-index: 1001; /* Garante que o ícone fique acima de outros elementos */
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 1000;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+        color: #0080ff;
+        text-decoration: none;
+    }
+
+
+    /* Show nav when .show-nav class is added */
+    .show-nav nav {
+        display: flex;
+    }
+
+    /* Ajustando imagens do slider */
+    #contact-left-image {
+        display: none;
+    }
+    
+    .contact-right img {
+        margin-top: 0;
+    }
+    #slider-wrapper {
+        display: none;
+    }
+    
+    .slider-wrapper img {
+        display: none;
+    }
+
+    .space-before {
+        margin: 0.5vh;
+        padding: 0.5vh;
+    }
+    .space-after {
+        margin: 5vh;
+        padding: 5vh;
+    }    
+}
 
 /* Styles spécifiques au Galaxy Z Fold 5 */
 @media (max-width: 344px) {
@@ -307,4 +422,4 @@ form {
     }
 }
   
-    
+
