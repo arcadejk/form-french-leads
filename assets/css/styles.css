@@ -4,6 +4,34 @@ body {
     padding-top: 15px;
 }
 
+header {
+    background: linear-gradient(135deg, #ffdad5, #fff7f9); 
+    padding: 20px 0; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    
+.header-first-div {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header-first-div h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    color: #0080ff;
+    margin: 0;
+}
+    
+.header-first-div p {
+    font-family: 'Outfit', sans-serif;
+    color: #a363aa;
+    font-size: 15px;
+    margin: 5px 0 0;
+}
+    
 /* Menu Icon */
 .menu-icon {
     display: none;
@@ -12,6 +40,11 @@ body {
     cursor: pointer;
     font-size: 24px;
     color: #0080ff;
+}
+
+nav {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
 }
 
 footer {
