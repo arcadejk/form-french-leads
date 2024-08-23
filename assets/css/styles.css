@@ -168,7 +168,7 @@ form {
     header h1, header p {
         padding-left: 15px;
         padding-right: 8px;
-        text-align: left;
+        text-align: center;
     }
     form {
         padding: 15px;
@@ -222,7 +222,7 @@ form {
         color: #0080ff; /* Cor do ícone */
         cursor: pointer; /* Cursor indicando que o ícone é clicável */
         position: absolute; /* Posiciona o ícone no topo */
-        top: 70px; /* Alinhamento ao topo */
+        top: 80px; /* Alinhamento ao topo */
         right: 20px; /* Alinhamento à direita */
         z-index: 1001; /* Garante que o ícone fique acima de outros elementos */
     }
