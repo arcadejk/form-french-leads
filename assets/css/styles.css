@@ -167,10 +167,6 @@ form {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.space-after {
-    margin: 3vh;
-    padding: 3vh;
-}
 
 /* Styles spécifiques au Galaxy S20 Ultra */
 @media (max-width: 421px) {
@@ -231,7 +227,7 @@ form {
         color: #0080ff; /* Cor do ícone */
         cursor: pointer; /* Cursor indicando que o ícone é clicável */
         position: absolute; /* Posiciona o ícone no topo */
-        top: 50px; /* Alinhamento ao topo */
+        top: 70px; /* Alinhamento ao topo */
         right: 20px; /* Alinhamento à direita */
         z-index: 1001; /* Garante que o ícone fique acima de outros elementos */
     }
@@ -277,15 +273,6 @@ form {
     .slider-wrapper img {
         display: none;
     }
-
-    .space-before {
-        margin: 0.5vh;
-        padding: 0.5vh;
-    }
-    .space-after {
-        margin: 5vh;
-        padding: 5vh;
-    }    
 }
 
 /* Styles spécifiques au Galaxy Z Fold 5 */
@@ -392,15 +379,6 @@ form {
     
     .slider-wrapper img {
         display: none;
-    }
-
-    .space-before {
-        margin: 0.5vh;
-        padding: 0.5vh;
-    }
-    .space-after {
-        margin: 5vh;
-        padding: 5vh;
     }
 
     /* Ensure the WhatsApp button stays on top */
