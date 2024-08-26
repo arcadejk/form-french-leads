@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const cards = document.querySelectorAll('.card');
+    const cards = document.querySelectorAll('.price-card');
 
     cards.forEach(card => {
         card.addEventListener('mouseover', function () {
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         card.querySelector('button').addEventListener('click', function () {
-            alert(`You chose the ${card.querySelector('h2').innerText} plan!`);
+            alert(`You chosed the ${card.querySelector('h2').innerText} plan!`);
         });
     });
 });
