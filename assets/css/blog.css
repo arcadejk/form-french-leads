@@ -131,6 +131,12 @@
         margin: 20px;
         padding: 15px 10px;
     }
+
+    .blog-card {
+        width: 100%;
+        margin-bottom: 15px;
+        align-items: center;
+    }
 }
 
 /* Media query for screens 344px or smaller */
@@ -146,6 +152,7 @@
     .blog-card {
         width: 100%;
         margin-bottom: 15px;
+        align-items: center;
     }
 
     .blog-article {
