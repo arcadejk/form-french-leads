@@ -305,6 +305,7 @@ form {
 
 /* Styles spécifiques au Galaxy Z Fold 5 */
 @media (max-width: 344px) {
+
     header h1, header p {
         padding-left: 15px;
         padding-right: 8px;
